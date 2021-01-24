@@ -58,9 +58,8 @@ for (k in 2:15){
                            ))
 }
 ```
-Visualization for 3 pages
+Visualization from 2 clusters to 6 clusters
 ```
 grid.arrange(grobs = graph[2:6], ncol=1)
-grid.arrange(grobs = graph[7:11], ncol=1)
-grid.arrange(grobs = graph[12:15], ncol=1)
 ```
+![To see the results :](https://github.com/magnierj/data_visualization/blob/main/github_clustering.pdf)
