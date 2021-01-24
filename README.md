@@ -18,12 +18,14 @@ library(gridExtra)
 Import datasets : 
 - samples_ID dataset with heading : ID_sample ; pop_sample 
 - list of cattle populations 
-```DET_IND=read.table("DATA.ind")[,c(-2)]
+```
+DET_IND=read.table("DATA.ind")[,c(-2)]
 DET_POP=read.table("ORD_RACES_24pop",sep=" ")
 Npops=dim(DET_POP)[1]
 ```
 Clustering visualization from 2 cluster to 15 clusters
-```graph <- list()
+```
+graph <- list()
 
 for (k in 2:15){
   DATA_Q=read.table(paste("DATA",k, "Q", sep="."))
@@ -57,7 +59,8 @@ for (k in 2:15){
 }
 ```
 Visualization for 3 pages
-```grid.arrange(grobs = graph[2:6], ncol=1)
+```
+grid.arrange(grobs = graph[2:6], ncol=1)
 grid.arrange(grobs = graph[7:11], ncol=1)
 grid.arrange(grobs = graph[12:15], ncol=1)
 ```
